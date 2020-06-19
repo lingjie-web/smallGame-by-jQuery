@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>别踩黑块</title>
+  <script src="./jquery-dev-1.12.4.js"></script>
+  <script src="./main.js"></script>
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+   <!-- 登陆界面 -->
+   <div class="loginBgc">
+    <div class='login'>
+      <div>
+        <span> 登录名：</span>
+        <input type="text" class="name" value="admin">
+      </div>
+      <div>
+        <span>密码：</span>
+        <input type="text" class="pas" value="123456">
+      </div>
+      <button class="gameStart" disabled>开始游戏</button>
+    </div>
+    <div class="rules">
+      <p>规则：用户名：admin，密码：123456，不输入按钮禁用，点击白块加十分，点击黑块扣血，游戏时间为60秒，最佳成绩由本地存储比较得出</p>
+    </div>
+  </div>
+    <!-- 游戏界面 -->
+    <div class="gameView">
+        <!-- 计分板 -->
+      <div class="scoreView">
+        <div class="timeLine">
+          <span>时间</span>
+          <div></div>
+        </div>
+        <div class="lifes">
+          <span>生命：</span>
+          <ul class="life">
+          <li class="life1"></li>
+          <li class="life2"></li>
+          <li class="life3"></li>
+          <li class="life4"></li>
+          </ul>
+          <div class="score">
+            <span> 得分：</span>
+            <span> 0 </span>
+            <span> 最佳成绩：</span>
+            <span> 0 </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- 游戏区 -->
+      <div class="content"></div>
+
+    </div>
+
+      <!-- 重新开始 -->
+    <div class="reStart">
+      <div class="reStartBox">
+        <h1>游戏结束</h1>
+        <div class="lastScore1">
+          <span> 最终得分：</span>
+          <span> 0 </span>
+        </div>
+        <div class="lastScore2">
+          <span> 最好成绩：</span>
+          <span> 0 </span>
+        </div>
+        <div class="btn">重新开始</div>
+      </div>
+    </div>
+    
+</body>
+</html>
